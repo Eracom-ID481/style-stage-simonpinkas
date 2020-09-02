@@ -13,7 +13,7 @@ Avec ce projet, vous apporterez votre pierre à l’édifice. Vous créerez un f
 * Vous utiliserez les grilles et les variables CSS.
 * Votre page sera responsive
 * Vous donnerez un nom à votre style et hébergerez celui-ci sur GitHub Pages.
-
+  
 ## Évalutation
 Vous serez évalué.e.s sur les critères suivants:
 * Suivi des consignes et des contraintes

@@ -58,3 +58,32 @@ select {
 }
 
 /* Fin du CSS Reset */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Oswald, sans-serif;
+}
+
+h1 {
+  font-size: 8vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+  font-size: 1vw;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container a svg {
+  width: 10px;
+}
