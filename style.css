@@ -80,7 +80,7 @@ h5 {
 h1 {
   font-size: 4rem;
   text-transform: uppercase;
-  font-weight: black;
+  font-weight: bold;
 }
 
 h2 {
@@ -91,7 +91,8 @@ h3 {
   font-size: 1.75rem;
 }
 
-a {
+header a,
+nav a {
   background: red;
   color: white;
   padding: 0.4rem;
@@ -123,11 +124,27 @@ nav ul {
 nav ul li {
   margin: 1rem;
   transform: rotate(-10deg);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+nav ul li:nth-child(odd) {
+  transform: rotate(10deg);
 }
 
 nav ul li:hover {
   transform: rotate(10deg);
   transition: all ease-in-out 0.1s;
+}
+
+nav ul li:hover:nth-child(odd) {
+  transform: rotate(-10deg);
+  transition: all ease-in-out 0.1s;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 nav ul li a:hover {
@@ -141,8 +158,10 @@ nav ul li a:hover {
 }
 
 .skip-link {
-  position: absolute;
+  color: white;
+  font-size: 0.8rem;
   left: 2rem;
+  position: absolute;
   top: 2rem;
   z-index: 100;
 }
