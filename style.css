@@ -83,20 +83,21 @@ h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: calc(1rem + 10vw);
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 1;
 }
 
 h2 {
   font-size: 2rem;
+  line-height: 1;
 }
 
 h3 {
   font-size: 1.75rem;
 }
 
-header a,
 nav a {
   background: var(--beige-light);
   color: var(--blue-dark);
@@ -107,12 +108,25 @@ nav a {
 header {
   align-items: center;
   background-color: var(--blue-dark);
-  color: white;
+  color: var(--beige-light);
   display: flex;
   flex-direction: column;
   min-height: 40vh;
   padding: 10vw;
   text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+header a {
+  color: var(--beige-light);
+}
+
+header a svg {
+  fill: var(--beige-light);
+  width: 0.75rem;
 }
 
 nav {
@@ -152,13 +166,9 @@ nav ul li a:hover {
   transition: all ease-in-out 0.1s;
 }
 
-.container a svg {
-  fill: var(--blue-dark);
-  width: 0.75rem;
-}
-
 .skip-link {
   color: white;
+  display: none;
   font-size: 0.8rem;
   left: 2rem;
   position: absolute;
@@ -169,20 +179,19 @@ nav ul li a:hover {
 main {
   background-color: var(--beige-dark);
   color: var(--blue-dark);
-  padding: 1rem;
+  padding: 1.3rem;
 }
 
 section.container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
 }
 
 section.container h2 {
   grid-row: span 10;
+  position: sticky;
 }
 
 section.container p {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 @media only screen and (min-width: 768px) {
