@@ -66,10 +66,11 @@ select {
   --secondary-dark: #cbaf87;
   --secondary-light: #e7dec8;
   */
-  --primary-dark: #456045;
-  --primary-light: #45e333;
-  --secondary-dark: #444444;
-  --secondary-light: #ffffff;
+  --primary-dark: #30475e;
+  --primary-light: #7e8a97;
+  --secondary-dark: #f44444;
+  --secondary-light: #e7dec8;
+
 }
 
 html {
