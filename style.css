@@ -60,11 +60,16 @@ select {
 /* Fin du CSS Reset */
 
 :root {
-  /*  --blue-dark: #30475e;
-  --blue-light: #7e8a97;
-  --beige-dark: #cbaf87;
-  --beige-light: #e7dec8;
-*/
+  /*
+  --primary-dark: #30475e;
+  --primary-light: #7e8a97;
+  --secondary-dark: #cbaf87;
+  --secondary-light: #e7dec8;
+  */
+  --primary-dark: #30475e;
+  --primary-light: #7e8a97;
+  --secondary-dark: #cbaf87;
+  --secondary-light: #e7dec8;
 }
 
 html {
@@ -102,16 +107,16 @@ h3 {
 }
 
 nav a {
-  background: #e7dec8;
-  color: #30475e;
+  background: var(--secondary-dark);
+  color: var(--primary-dark);
   padding: 0.4rem;
   text-decoration: none;
 }
 
 header {
   align-items: center;
-  background-color: #30475e;
-  color: #e7dec8;
+  background-color: var(--primary-dark);
+  color: var(--secondary-light);
   display: flex;
   flex-direction: column;
   min-height: 40vh;
@@ -124,17 +129,17 @@ header h1 {
 }
 
 header a {
-  color: #e7dec8;
+  color: var(--secondary-light);
 }
 
 header a svg,
 footer a svg {
-  fill: #e7dec8;
+  fill: var(--secondary-light);
   width: 0.75rem;
 }
 
 nav {
-  background-color: #7e8a97;
+  background-color: var(--primary-light);
 }
 
 nav ul {
@@ -165,13 +170,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #30475e;
-  color: #e7dec8;
+  background: var(--primary-dark);
+  color: var(--secondary-light);
   transition: all ease-in-out 0.1s;
 }
 
 .skip-link {
-  color: white;
   display: none;
   font-size: 0.8rem;
   left: 2rem;
@@ -181,13 +185,23 @@ nav ul li a:hover {
 }
 
 main {
-  background-color: #cbaf87;
-  color: #30475e;
+  background-color: var(--secondary-light);
+  color: var(--primary-dark);
   padding: 1.3rem;
 }
 
 main a {
-  color: #30475e;
+  color: var(--primary-dark);
+}
+
+main article {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+section.container h2 {
+  grid-row: span 10;
+  position: sticky;
 }
 
 section.container p {
@@ -195,23 +209,27 @@ section.container p {
 }
 
 footer {
-  background-color: #30475e;
-  color: #e7dec8;
+  background-color: var(--primary-dark);
+  color: var(--secondary-light);
   padding: 1rem;
 }
 
 footer a {
-  color: #e7dec8;
+  color: var(--secondary-light);
+}
+
+footer#page-footer {
+  background-color: var(--secondary-dark);
 }
 
 aside {
-  background-color: #7e8a97;
-  color: #e7dec8;
+  background-color: var(--secondary-dark);
+  color: var(--primary-dark);
   padding: 1rem;
 }
 
 aside a {
-  color: #e7dec8;
+  color: var(--primary-dark);
 }
 
 @media only screen and (min-width: 768px) {
